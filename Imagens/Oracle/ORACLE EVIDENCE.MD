@@ -6,11 +6,20 @@
 docker run --name oracle18 -i -t -d -p 1521:1521 pvargacl/oracle-xe-18.4.0
 
 
+## connection
+
 id: xe
 
 usr: system
 
 pwd: oracle
+
+
+## create schema
+
+alter session set "_ORACLE_SCRIPT"=true;  
+
+create user sec_admin identified by "Chutinhbk123@!";
 
 
 
